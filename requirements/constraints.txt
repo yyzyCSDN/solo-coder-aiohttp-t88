@@ -26,6 +26,10 @@ attrs==25.3.0
     # via -r requirements/runtime-deps.in
 babel==2.17.0
     # via sphinx
+backports-zstd==0.5.0 ; implementation_name == "cpython"
+    # via
+    #   -r requirements/lint.in
+    #   -r requirements/runtime-deps.in
 blockbuster==1.5.26
     # via
     #   -r requirements/lint.in
@@ -162,7 +166,7 @@ pydantic-core==2.33.2
     # via pydantic
 pyenchant==3.3.0
     # via sphinxcontrib-spelling
-pygments==2.19.2
+pygments==2.21.0
     # via
     #   pytest
     #   rich
@@ -302,10 +306,6 @@ zlib-ng==1.0.0
     # via
     #   -r requirements/lint.in
     #   -r requirements/test-common.in
-backports.zstd==0.5.0 ; implementation_name == "cpython"
-    # via
-    #   -r requirements/lint.in
-    #   -r requirements/runtime-deps.in
 
 # The following packages are considered to be unsafe in a requirements file:
 pip==25.2
